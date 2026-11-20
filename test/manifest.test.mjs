@@ -21,7 +21,11 @@ function fixture(t) {
 
 test("the checked-in package passes validation without changing its manifest", () => {
   assert.deepEqual(refreshManifest(ROOT, { check: true }),
-    { changed: false, skills: 17, agents: 11, files: 47 });
+    { changed: false, skills: 7, agents: 11, files: 34 });
+  assert.deepEqual(buildManifest(ROOT).skills.map((entry) => entry.name).sort(), [
+    "agent-benchmark-preflight", "design-ui", "impl-check", "plan",
+    "planning-qualitative-optimization", "reading-docx", "writing-skills",
+  ]);
 });
 
 test("an edited profile round-trips through hash refresh and preserves registered names", (t) => {

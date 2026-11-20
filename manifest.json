@@ -2,34 +2,9 @@
   "schemaVersion": 1,
   "skills": [
     {
-      "name": "designing-agents",
-      "path": "skills/designing-agents",
-      "description": "Use when designing or editing application agents, prompts, tool surfaces, or non-chat classification, extraction, verification, and creation workflows."
-    },
-    {
-      "name": "gpt-prompting-knowhow",
-      "path": "skills/gpt-prompting-knowhow",
-      "description": "Use when migrating or evaluating GPT-specific prompt and tool behavior, not for every coding task."
-    },
-    {
-      "name": "designing-structured-output",
-      "path": "skills/designing-structured-output",
-      "description": "Use when designing model/tool schemas, identity coverage or recovery from invalid structured output."
-    },
-    {
       "name": "planning-qualitative-optimization",
       "path": "skills/planning-qualitative-optimization",
       "description": "Use when scoping an observed LLM quality failure into a falsifiable real-data experiment."
-    },
-    {
-      "name": "executing-qualitative-optimization",
-      "path": "skills/executing-qualitative-optimization",
-      "description": "Use when implementing an agreed LLM quality experiment and validating it against representative real sources."
-    },
-    {
-      "name": "running-real-data-smoke-tests",
-      "path": "skills/running-real-data-smoke-tests",
-      "description": "Use when running a manual real-service smoke test, or when a material integration claim requires evidence from the actual app/runtime or a real external service beyond focused tests."
     },
     {
       "name": "reading-docx",
@@ -42,24 +17,9 @@
       "description": "Use for a deep implementation review or a completed high-risk cross-layer change requiring independent review."
     },
     {
-      "name": "review-final-diff",
-      "path": "skills/review-final-diff",
-      "description": "Use for a focused direct review of an ordinary completed diff when a full independent impl-check is unnecessary."
-    },
-    {
       "name": "design-ui",
       "path": "skills/design-ui",
       "description": "Use when designing or changing user-facing layout, interaction, forms or async UI states."
-    },
-    {
-      "name": "triaging-pr-feedback",
-      "path": "skills/triaging-pr-feedback",
-      "description": "Use when given a GitHub PR link or number to evaluate review feedback against the actual code and, when requested, resolve valid comments."
-    },
-    {
-      "name": "renaming",
-      "path": "skills/renaming",
-      "description": "Use when a requested rename spans many files or requires coordinated case-preserving text and path changes."
     },
     {
       "name": "writing-skills",
@@ -67,19 +27,9 @@
       "description": "Use when creating or auditing SKILL.md, Pi agent profiles or reusable coding-agent instructions."
     },
     {
-      "name": "pr-preparation",
-      "path": "skills/pr-preparation",
-      "description": "Use when checking a named branch or PR for release readiness, configuration, migration and validation gaps."
-    },
-    {
       "name": "plan",
       "path": "skills/plan",
       "description": "Create or revise a task plan when the user asks for planning. Not needed to execute an already approved plan."
-    },
-    {
-      "name": "diagnosing-agent-prompts",
-      "path": "skills/diagnosing-agent-prompts",
-      "description": "Use when an agent workflow is slow, repetitive, overengineered, misses delegation/escalation, or otherwise behaves badly and you need to decide whether the cause is prompting, model behavior, runtime/tooling, or task setup before editing prompts."
     },
     {
       "name": "agent-benchmark-preflight",
@@ -251,38 +201,6 @@
       "sha256": "c3a72b7a7a5052ac130beb4ce08caf3c9915fce8915b0d5d0ca128fc482e2b40"
     },
     {
-      "path": "skills/designing-agents/SKILL.md",
-      "sha256": "44c52cda37a7609d4c9ccb45e56e60b272fc95434dbdcd17d7d7e9c4b4034213"
-    },
-    {
-      "path": "skills/designing-agents/agent-loop.md",
-      "sha256": "aa30cb672b3b50158eb8643dbdbf82ac9feba98b467d2f1ce2ec44899bac905c"
-    },
-    {
-      "path": "skills/designing-agents/blocks.md",
-      "sha256": "0c4ddeeb1685e90b022d4458901265ef749a5c0edcf87be8f442d3648f88cde5"
-    },
-    {
-      "path": "skills/designing-structured-output/SKILL.md",
-      "sha256": "b0e77ad840cca9e82308729a13443668933fbe1887541b85f921303c789843ad"
-    },
-    {
-      "path": "skills/diagnosing-agent-prompts/SKILL.md",
-      "sha256": "2220402d43e3eb381fe32621fc363b39985e0ca8f106ada6c698981d8cebe993"
-    },
-    {
-      "path": "skills/executing-qualitative-optimization/SKILL.md",
-      "sha256": "c3bf248ea0aa6e1be173cd02cdb51b04546ed884331e41d3bc2178404a69818b"
-    },
-    {
-      "path": "skills/gpt-prompting-knowhow/SKILL.md",
-      "sha256": "2de84a31cf0fbc471a114c0ad3ebf777a83ccc291eb58f233ff40ac271d73503"
-    },
-    {
-      "path": "skills/gpt-prompting-knowhow/reference.md",
-      "sha256": "c0189bb4e4ded68a1f3edef681a467afd3c99ac99bef7850f6af3081fceaff80"
-    },
-    {
       "path": "skills/impl-check/SKILL.md",
       "sha256": "8b35cb6ca831c0e0da8a6bae7f5a7a89e15a677e8c913553802b0767dd673096"
     },
@@ -336,31 +254,11 @@
     },
     {
       "path": "skills/planning-qualitative-optimization/SKILL.md",
-      "sha256": "5605e43510b144ebf8ac18ecde334a2e23388ff64b88d600926788eb3b5a7631"
-    },
-    {
-      "path": "skills/pr-preparation/SKILL.md",
-      "sha256": "bae3b1d3e7ce4274f066b8c58a2b8e00d78ae833107dcc4c2f98f97c510ec50b"
+      "sha256": "a002983da3f1bc446c609e21463a053c6893bfb652180ef135ed1d23dfbf943a"
     },
     {
       "path": "skills/reading-docx/SKILL.md",
       "sha256": "4b08368622ba4a397f608e3e4d6a0a80beb73c4b261c0c26d4251d3ee77ab11a"
-    },
-    {
-      "path": "skills/renaming/SKILL.md",
-      "sha256": "129a13f1b5936361050224becfccb7fde9a49de70369a2e13c8a1e41827875df"
-    },
-    {
-      "path": "skills/review-final-diff/SKILL.md",
-      "sha256": "c96a3789274aee2b2c3b07b0e5afa304cf357f1dacbe17f1371a1ce56330d495"
-    },
-    {
-      "path": "skills/running-real-data-smoke-tests/SKILL.md",
-      "sha256": "5afb304d3f211eb31f8b357ebafa0557f2a731cb28ab686ff1546e0e0de3ec7c"
-    },
-    {
-      "path": "skills/triaging-pr-feedback/SKILL.md",
-      "sha256": "89c3a1f118398201edd1f79b3107aba0e1778878f8ccbde7efcfda28188f9b8c"
     },
     {
       "path": "skills/writing-skills/SKILL.md",

@@ -15,4 +15,4 @@ Separate structural checks from semantic judgment. Schema, identity, coverage an
 
 For repeated/ambiguous failures, plan a bounded trace of rendered inputs, observable tool/validator events, retries and outputs. Specify redaction, retention, access and cost limits; exclude credentials and unnecessary personal data. Never request hidden reasoning.
 
-Use an existing experiment register when useful. A plan is a compact source/baseline/hypothesis/check contract, not a required intent file or compaction workaround. Implement via `executing-qualitative-optimization` only when authorized.
+Use an existing experiment register when useful. A plan is a compact source/baseline/hypothesis/check contract, not a required intent file or compaction workaround. Implement the plan only when authorized.

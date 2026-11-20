@@ -1,6 +1,6 @@
 # PiTTy Skills
 
-Reusable engineering skills and eleven Pi agent profiles. The package contains seventeen selected skills for implementation review, debugging support, UI work, prompt design and controlled evaluation.
+Reusable engineering skills and eleven Pi agent profiles. The package contains seven selected skills for implementation review, UI work, planning, document reading and controlled evaluation.
 
 Agent profiles leave model, provider and thinking selections unset. They inherit the current parent configuration unless your Pi settings provide an override.
 
@@ -89,22 +89,12 @@ The maintenance scripts need Node.js 18 or newer and no installed npm dependenci
 
 | Skill | Purpose |
 |---|---|
-| `designing-agents` | Use when designing or editing application agents, prompts, tool surfaces, or non-chat classification, extraction, verification, and creation workflows. |
-| `gpt-prompting-knowhow` | Use when migrating or evaluating GPT-specific prompt and tool behavior, not for every coding task. |
-| `designing-structured-output` | Use when designing model/tool schemas, identity coverage or recovery from invalid structured output. |
 | `planning-qualitative-optimization` | Use when scoping an observed LLM quality failure into a falsifiable real-data experiment. |
-| `executing-qualitative-optimization` | Use when implementing an agreed LLM quality experiment and validating it against representative real sources. |
-| `running-real-data-smoke-tests` | Use when running a manual real-service smoke test, or when a material integration claim requires evidence from the actual app/runtime or a real external service beyond focused tests. |
 | `reading-docx` | Use when inspecting, searching, comparing, summarizing, or analyzing Microsoft Word .docx files. Convert DOCX to temporary Markdown before content analysis instead of parsing Office XML directly. |
 | `impl-check` | Use for a deep implementation review or a completed high-risk cross-layer change requiring independent review. |
-| `review-final-diff` | Use for a focused direct review of an ordinary completed diff when a full independent impl-check is unnecessary. |
 | `design-ui` | Use when designing or changing user-facing layout, interaction, forms or async UI states. |
-| `triaging-pr-feedback` | Use when given a GitHub PR link or number to evaluate review feedback against the actual code and, when requested, resolve valid comments. |
-| `renaming` | Use when a requested rename spans many files or requires coordinated case-preserving text and path changes. |
 | `writing-skills` | Use when creating or auditing SKILL.md, Pi agent profiles or reusable coding-agent instructions. |
-| `pr-preparation` | Use when checking a named branch or PR for release readiness, configuration, migration and validation gaps. |
 | `plan` | Create or revise a task plan when the user asks for planning. Not needed to execute an already approved plan. |
-| `diagnosing-agent-prompts` | Use when an agent workflow is slow, repetitive, overengineered, misses delegation/escalation, or otherwise behaves badly and you need to decide whether the cause is prompting, model behavior, runtime/tooling, or task setup before editing prompts. |
 | `agent-benchmark-preflight` | Use immediately before launching an agent/prompt benchmark or A/B run to verify the comparison is controlled, reproducible and safe to leave unattended. |
 
 ## Agent profiles
