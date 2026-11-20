@@ -19,7 +19,7 @@
     {
       "name": "design-ui",
       "path": "skills/design-ui",
-      "description": "Use when designing or changing user-facing layout, interaction, forms or async UI states."
+      "description": "Use when designing, changing, or reviewing user-facing interfaces, including existing pages, layouts, workflows, lists, forms, copy, and async states."
     },
     {
       "name": "writing-skills",
@@ -182,7 +182,7 @@
     },
     {
       "path": "skills/design-ui/CODE-REVIEW.md",
-      "sha256": "eb421cea1d5bb90a2e7e16ea0fec6699d1bc61e50d628e462a6a49162e5dda99"
+      "sha256": "28dfefdb5eb6f6244edf99147fb29b4dc0bff99bf0d12dcd645af11374ccbc4b"
     },
     {
       "path": "skills/design-ui/COMPONENTS.md",
@@ -198,7 +198,7 @@
     },
     {
       "path": "skills/design-ui/SKILL.md",
-      "sha256": "c3a72b7a7a5052ac130beb4ce08caf3c9915fce8915b0d5d0ca128fc482e2b40"
+      "sha256": "9df5227dc201a7ae4f1c16cc7bc019bea4ba38ad80c0f0ddfbf609819d13c1ef"
     },
     {
       "path": "skills/impl-check/SKILL.md",

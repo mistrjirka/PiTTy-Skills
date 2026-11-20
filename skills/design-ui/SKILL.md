@@ -1,13 +1,13 @@
 ---
 name: design-ui
-description: Use when designing or changing user-facing layout, interaction, forms or async UI states.
+description: Use when designing, changing, or reviewing user-facing interfaces, including existing pages, layouts, workflows, lists, forms, copy, and async states.
 ---
 
 # UI design and implementation
 
 Start from the product's actual audience, task, existing interface and installed design system. Reuse its components, tokens, typography and conventions. A bug fix is not authorization to redesign the brand or add a component library.
 
-For a new visual direction, use the supplied brief and real content. Ask only when a missing product choice materially changes the result. Offer alternatives when they help the decision, not as a required phase. Prefer coherent hierarchy and readable density over decorative novelty; no universal font, color or layout bans.
+For a new visual direction, use the supplied brief and real content. Ask only when a missing product choice materially changes the result. Offer alternatives when they help the decision, not as a required phase. Prefer coherent hierarchy and readable density over decorative novelty. Never impose universal font sizes, control heights, spacing, widths, palettes or library choices; derive them from the existing design system and actual usability needs.
 
 ## Existing-product visual consistency is the default
 
@@ -16,6 +16,8 @@ When editing an established application, the goal is **to match its existing int
 Before implementation, inspect the target screen, the parent layout/shell, and at least two comparable existing screens (such as neighboring list, detail or form views). Identify the shared components, theme tokens, layout wrappers and interaction conventions they actually use. State which concrete reference screens and components the change follows. When references disagree, follow the pattern used most consistently for the same task, not a one-off anomaly.
 
 Preserve the existing page width, gutters, header hierarchy, typography, spacing, density, grid/table structure, form layout, navigation, button placement, dialogs, status treatment and responsive breakpoints. Prefer reusing an existing component to imitating it with new markup. Do not add decorative cards, nested containers, oversized headings, new UI libraries or duplicate navigation because they look fashionable.
+
+Same task should use the same component, label and interaction throughout the product. Align corresponding table columns and filter controls; reuse existing tabs, pagination, help, loading and empty-state patterns. Follow the app's navigation icon conventions. Do not add a second Back action, a choice with only one option, or a different control for an already established task. Use links for navigation and buttons for actions; make a row with one destination a clear, accessible target.
 
 Check that the same concept appears with the same name, status, actions and destinations across list, detail and related screens. Do not expose raw GUIDs, opaque database keys or internal event IDs as the primary user-facing label. Use real resolved people, folders, SharePoint libraries, documents and tickets. If resolution fails, show a clear unavailable label or retry rather than guessing a name or rendering the raw ID. Technical IDs belong in deliberate diagnostics or audit surfaces when needed.
 
@@ -29,11 +31,21 @@ Place the primary content early in the reading order and within the initial view
 
 Show metadata when it affects trust, decisions, deadlines, troubleshooting or audit requirements. Otherwise demote it to subdued inline text, a secondary area or an accessible details view, or omit it when genuinely unnecessary. Use progressive disclosure for infrequently needed detail, never for information or controls required to complete the current task. In particular, multiple dates should not consume prominent screen space unless their distinct meanings matter to the user.
 
+Avoid redundant headings, repeated status text and prominent implementation explanations. Use the established tooltip or details pattern for optional guidance, but show restrictions, consequences and the information needed to decide directly. Use meaningful duration units and explain when access begins or ends; do not invent limits or approval states.
+
+## Lists, forms and search
+
+Give lists a useful, deterministic default sort. Show the active sort when sorting is available. Growing lists need appropriate filters, pagination and clear filter removal; sort and paginate the full result set, not only the visible page. Reuse existing table and row styles, search human names as well as meaningful identifiers, and preserve filter state using the project's established conventions.
+
+For forms, keep the primary action near the relevant content and make Save, Cancel, Publish and destructive actions match actual eligibility. Do not offer duplicate or meaningless actions. Explain disabled controls on keyboard focus as well as hover, without hiding important reasons from assistive technology.
+
 ## Define behavior before rendering
 
 List the states relevant to the changed component: initial, loading, empty, ready, stale/refreshing, editing, pending, error, cancelled and unavailable. Define the primary action and recovery for each applicable state. Keep pending work distinct from confirmed success; optimistic changes need a deliberate rollback/reconciliation policy.
 
 Check duplicate actions, out-of-order responses, late results after cancellation, reload/reattachment and unsaved edits where the feature requires them. Expose server permissions accurately; UI controls never replace authorization.
+
+Trace the actual workflow across navigation, list, detail, action and result, including each materially different user role. Approval, a success badge or a working endpoint is not the outcome if the user still cannot access the requested information or action. Do not split essential information into misleading fragments, such as a preceding question without its reply when reviewing a complete exchange. Distinguish a redacted preview from approved context and original content; only promise what authorized backend reads can deliver. Check older records as well as newly created ones when both are in scope.
 
 ## Build for actual use
 
@@ -45,4 +57,4 @@ Describe actual actions and outcomes in consistent product language. Give useful
 
 Use [CODE-REVIEW.md](CODE-REVIEW.md) for the changed UI's implementation checks. Use [EVALUATION.md](EVALUATION.md) for a requested UX audit, [COMPONENTS.md](COMPONENTS.md) for component-specific branches, and [REACT-PERFORMANCE.md](REACT-PERFORMANCE.md) only for a relevant React performance issue.
 
-Run the project's focused checks and inspect the rendered result at relevant sizes when browser/rendering tools are available. Verify actual interaction and failure states, not just a screenshot of the happy path. Report source-only or unavailable visual validation explicitly. Do not claim a browser, accessibility or performance test ran when it did not.
+Run the project's focused checks and inspect the rendered result at relevant sizes when browser/rendering tools are available. Compare actual screenshots with the reference screens, especially after a complaint about visual consistency: a DOM snapshot or passing typecheck cannot show incorrect styling, alignment or clipping. Exercise the relevant user-like interactions and roles, including failure states; recheck after meaningful revisions. Ensure documentation screenshots show the current, fully styled application and enough of the workflow to be understandable. Report source-only or unavailable visual validation explicitly. Do not claim a browser, accessibility or performance test ran when it did not.
