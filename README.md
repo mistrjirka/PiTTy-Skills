@@ -59,7 +59,9 @@ pitty founders-setup --skills-source git:https://github.com/YOUR-USER/PiTTy-Skil
 
 Founders setup remembers an explicit source selection for later runs.
 
-Founders setup does not fetch an already prepared Git checkout. To fetch updates for your remote fork and refresh its managed profiles:
+Founders setup does not fetch an already compatible Git checkout. PiTTy 0.8.1 and newer refresh older unpinned copies of the maintained skills and subagent bundles when needed. Forks, local sources and explicit pins keep their selected versions.
+
+To fetch updates for your remote fork and refresh its managed profiles:
 
 ```bash
 pi update git:https://github.com/YOUR-USER/PiTTy-Skills.git
