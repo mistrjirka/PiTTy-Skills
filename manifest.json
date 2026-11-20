@@ -107,7 +107,7 @@
         "explore"
       ],
       "description": "Scoped implementation with validation",
-      "sha256": "d028c5e4a05a8c96428ea5f1b0b3303a981d313cde62c086fa7b10ae91f38d70"
+      "sha256": "4bb29608e80abd3c6f9a4b2bf23021670936f17674a30d99b52b974c689ee7ee"
     },
     {
       "name": "general",
@@ -170,7 +170,7 @@
     },
     {
       "path": "agents/implementer.md",
-      "sha256": "d028c5e4a05a8c96428ea5f1b0b3303a981d313cde62c086fa7b10ae91f38d70"
+      "sha256": "4bb29608e80abd3c6f9a4b2bf23021670936f17674a30d99b52b974c689ee7ee"
     },
     {
       "path": "agents/references/feasibility.md",
