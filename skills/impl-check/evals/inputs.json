@@ -1,0 +1,117 @@
+[
+  {
+    "id": "001",
+    "request": "Export failures must be visible to the caller.",
+    "files": {
+      "export.ts": "export async function exportRows() { try { return await requiredExport(); } catch { return []; } }"
+    }
+  },
+  {
+    "id": "002",
+    "request": "Searching an empty dataset legitimately returns an empty list.",
+    "files": {
+      "search.ts": "export function matches(rows: Row[], term: string): Row[] { return rows.filter(row => row.title.includes(term)); }"
+    }
+  },
+  {
+    "id": "003",
+    "request": "External messages must be validated before use.",
+    "files": {
+      "boundary.ts": "export function decode(text: string): Message { return JSON.parse(text) as Message; }"
+    }
+  },
+  {
+    "id": "004",
+    "request": "The parser validates raw input and owns the canonical type.",
+    "files": {
+      "boundary.ts": "const Schema = z.object({ name: z.string() });\nexport type User = z.infer<typeof Schema>;\nexport function parseUser(raw: unknown): User { return Schema.parse(raw); }\n// Caller converts validation errors into its documented 400 response."
+    }
+  },
+  {
+    "id": "005",
+    "request": "Requests already pass trusted authentication and per-resource tenant checking.",
+    "files": {
+      "middleware.ts": "app.use(requireSession);\napp.get(\"/record/:id\", async (req, res) => { res.json(await records.forTenant(req.session.tenantId).get(req.params.id)); });"
+    }
+  },
+  {
+    "id": "006",
+    "request": "All provider requests must use the project client for request accounting.",
+    "files": {
+      "client.ts": "export async function request(input: Input) { const result = await sdk.run(input); account(result.usage); return result; }",
+      "feature.ts": "export async function runFeature(input: Input) { return sdk.run(input); }"
+    }
+  },
+  {
+    "id": "007",
+    "request": "A transaction facade enforces an invariant across two writes.",
+    "files": {
+      "transfer.ts": "export async function transfer(input: Transfer) { return db.transaction(async tx => { await debit(tx, input); await credit(tx, input); }); }",
+      "route.ts": "await transfer(input);"
+    }
+  },
+  {
+    "id": "008",
+    "request": "Malformed configuration must fail visibly; a newly copied helper must not repeat a known bad fallback.",
+    "files": {
+      "existing.ts": "export function parseConfig(text: string) { try { return JSON.parse(text); } catch { return {}; } }",
+      "new.ts": "export function parseSettings(text: string) { try { return JSON.parse(text); } catch { return {}; } }"
+    }
+  },
+  {
+    "id": "009",
+    "request": "A new request must recover after the worker process restarts.",
+    "files": {
+      "worker.ts": "if (record.status === \"RUNNING\") return record;\nawait startWorker(record);"
+    }
+  },
+  {
+    "id": "010",
+    "request": "Support old and new application versions during an additive rollout.",
+    "files": {
+      "migration.sql": "ALTER TABLE users ADD COLUMN display_name text;\n-- Separate backfill, dual-read rollout, then constraint tightening in later release."
+    }
+  },
+  {
+    "id": "011",
+    "request": "Cancelling the operation must stop the underlying request and reject late results.",
+    "files": {
+      "component.ts": "function cancel() { setLoading(false); }\nasync function run() { setLoading(true); const result = await provider.run(); setResult(result); }"
+    }
+  },
+  {
+    "id": "012",
+    "request": "Evaluate the new prompt on a fresh model run, not the cache path.",
+    "files": {
+      "smoke.ts": "const processId = randomUUID();\nconst output = await loadCachedResult();\nassert(output !== undefined);\nconsole.log(\"Fresh model evaluation passed\", processId);"
+    }
+  },
+  {
+    "id": "013",
+    "request": "A private local helper shape follows project conventions and is not exported.",
+    "files": {
+      "component.ts": "type ItemState = { expanded: boolean };\nfunction close(state: ItemState): ItemState { return { ...state, expanded: false }; }"
+    }
+  },
+  {
+    "id": "014",
+    "request": "A regression test must detect an incorrect calculated price.",
+    "files": {
+      "price.test.ts": "const calculatePrice = vi.fn(() => 12);\nexpect(calculatePrice()).toBe(12);"
+    }
+  },
+  {
+    "id": "015",
+    "request": "The old and new service versions must see one compatible database history.",
+    "files": {
+      "release.md": "Assume no migration was deployed. Delete its migration-history row and concatenate all pending branch migrations before release."
+    }
+  },
+  {
+    "id": "016",
+    "request": "Review this input field for a responsiveness regression.",
+    "files": {
+      "search.tsx": "const [query, setQuery] = useState(\"\");\n<input value={query} onChange={e => startTransition(() => setQuery(e.target.value))} />"
+    }
+  }
+]

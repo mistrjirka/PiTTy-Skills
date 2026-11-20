@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {
+      "name": "designing-agents",
+      "path": "skills/designing-agents",
+      "description": "Use when designing or editing application agents, prompts, tool surfaces, or non-chat classification, extraction, verification, and creation workflows."
+    },
+    {
+      "name": "gpt-prompting-knowhow",
+      "path": "skills/gpt-prompting-knowhow",
+      "description": "Use when migrating or evaluating GPT-specific prompt and tool behavior, not for every coding task."
+    },
+    {
+      "name": "designing-structured-output",
+      "path": "skills/designing-structured-output",
+      "description": "Use when designing model/tool schemas, identity coverage or recovery from invalid structured output."
+    },
+    {
+      "name": "planning-qualitative-optimization",
+      "path": "skills/planning-qualitative-optimization",
+      "description": "Use when scoping an observed LLM quality failure into a falsifiable real-data experiment."
+    },
+    {
+      "name": "executing-qualitative-optimization",
+      "path": "skills/executing-qualitative-optimization",
+      "description": "Use when implementing an agreed LLM quality experiment and validating it against representative real sources."
+    },
+    {
+      "name": "running-real-data-smoke-tests",
+      "path": "skills/running-real-data-smoke-tests",
+      "description": "Use when running a manual real-service smoke test, or when a material integration claim requires evidence from the actual app/runtime or a real external service beyond focused tests."
+    },
+    {
+      "name": "reading-docx",
+      "path": "skills/reading-docx",
+      "description": "Use when inspecting, searching, comparing, summarizing, or analyzing Microsoft Word .docx files. Convert DOCX to temporary Markdown before content analysis instead of parsing Office XML directly."
+    },
+    {
+      "name": "impl-check",
+      "path": "skills/impl-check",
+      "description": "Use for a deep implementation review or a completed high-risk cross-layer change requiring independent review."
+    },
+    {
+      "name": "review-final-diff",
+      "path": "skills/review-final-diff",
+      "description": "Use for a focused direct review of an ordinary completed diff when a full independent impl-check is unnecessary."
+    },
+    {
+      "name": "design-ui",
+      "path": "skills/design-ui",
+      "description": "Use when designing or changing user-facing layout, interaction, forms or async UI states."
+    },
+    {
+      "name": "triaging-pr-feedback",
+      "path": "skills/triaging-pr-feedback",
+      "description": "Use when given a GitHub PR link or number to evaluate review feedback against the actual code and, when requested, resolve valid comments."
+    },
+    {
+      "name": "renaming",
+      "path": "skills/renaming",
+      "description": "Use when a requested rename spans many files or requires coordinated case-preserving text and path changes."
+    },
+    {
+      "name": "writing-skills",
+      "path": "skills/writing-skills",
+      "description": "Use when creating or auditing SKILL.md, Pi agent profiles or reusable coding-agent instructions."
+    },
+    {
+      "name": "pr-preparation",
+      "path": "skills/pr-preparation",
+      "description": "Use when checking a named branch or PR for release readiness, configuration, migration and validation gaps."
+    },
+    {
+      "name": "plan",
+      "path": "skills/plan",
+      "description": "Create or revise a task plan when the user asks for planning. Not needed to execute an already approved plan."
+    },
+    {
+      "name": "diagnosing-agent-prompts",
+      "path": "skills/diagnosing-agent-prompts",
+      "description": "Use when an agent workflow is slow, repetitive, overengineered, misses delegation/escalation, or otherwise behaves badly and you need to decide whether the cause is prompting, model behavior, runtime/tooling, or task setup before editing prompts."
+    },
+    {
+      "name": "agent-benchmark-preflight",
+      "path": "skills/agent-benchmark-preflight",
+      "description": "Use immediately before launching an agent/prompt benchmark or A/B run to verify the comparison is controlled, reproducible and safe to leave unattended."
+    }
+  ],
+  "agents": [
+    {
+      "name": "impl-check-behavior",
+      "path": "agents/impl-check-behavior.md",
+      "allowedSubagents": [],
+      "description": "Read-only impl-check-behavior; evidence and unresolved issues",
+      "sha256": "5f79b8cd4c94fda944766f283ccc29c19836f0880b95872b2e6610860dfcfca3"
+    },
+    {
+      "name": "impl-check-contracts",
+      "path": "agents/impl-check-contracts.md",
+      "allowedSubagents": [],
+      "description": "Read-only impl-check-contracts; evidence and unresolved issues",
+      "sha256": "b99bc4f5a50a629663ec5709ca2beb9da91dc1d84593cd136a2074831eeecaa5"
+    },
+    {
+      "name": "impl-check-design",
+      "path": "agents/impl-check-design.md",
+      "allowedSubagents": [],
+      "description": "Read-only impl-check-design; evidence and unresolved issues",
+      "sha256": "c77e135b95cda448b2d2202d8468473af36c0544b8eaee0db79ab3f283aa00ce"
+    },
+    {
+      "name": "impl-check-runtime",
+      "path": "agents/impl-check-runtime.md",
+      "allowedSubagents": [],
+      "description": "Read-only impl-check-runtime; evidence and unresolved issues",
+      "sha256": "bcfbddcce7251196bf10efc9dd20657cd114d40e2701b5c455ce16f8433954ff"
+    },
+    {
+      "name": "debugging-duck",
+      "path": "agents/debugging-duck.md",
+      "allowedSubagents": [
+        "explore",
+        "feasibility"
+      ],
+      "description": "Read-only independent diagnosis with delegated evidence gathering",
+      "sha256": "332eae712b26b5ad701f9715e7a9ab362e804e15a2a0c5d896cc7a99ad179b46"
+    },
+    {
+      "name": "feasibility",
+      "path": "agents/feasibility.md",
+      "allowedSubagents": [],
+      "description": "Deep read-only external/version research for material decisions needing synthesis",
+      "sha256": "90a17cf4fec27eaa296662f0c65f4d25053f7df5c3d1b1c19fa4720f6cb60dcf"
+    },
+    {
+      "name": "implementation-review",
+      "path": "agents/implementation-review.md",
+      "allowedSubagents": [],
+      "description": "Read-only implementation-review; evidence and unresolved issues",
+      "sha256": "eed87525d88edc7276c051fa14a4332eed26f1b8e13560be75711de6b106e219"
+    },
+    {
+      "name": "implementation-planner",
+      "path": "agents/implementation-planner.md",
+      "allowedSubagents": [
+        "explore",
+        "feasibility"
+      ],
+      "description": "Implementation planning with a saved execution plan and delegated repository exploration",
+      "sha256": "479d15a48f80c16ca19e5bd924bb846f36bad72b86f1adb879ec92f85b404d87"
+    },
+    {
+      "name": "implementer",
+      "path": "agents/implementer.md",
+      "allowedSubagents": [
+        "explore"
+      ],
+      "description": "Scoped implementation with validation",
+      "sha256": "d028c5e4a05a8c96428ea5f1b0b3303a981d313cde62c086fa7b10ae91f38d70"
+    },
+    {
+      "name": "general",
+      "path": "agents/general.md",
+      "allowedSubagents": [
+        "explore",
+        "feasibility"
+      ],
+      "description": "Bounded engineering execution and experimentation",
+      "sha256": "d90724cb2002f96a1b329976d2640295d8403b5fdcb8fc99cfa89d8530abdc85"
+    },
+    {
+      "name": "explore",
+      "path": "agents/explore.md",
+      "allowedSubagents": [],
+      "description": "Read-only repository/document evidence mapping for ownership, flow, callers, reuse and blast radius",
+      "sha256": "e9705155aea9695b1c9bbb8a62f3337953d0329e0a329b68c1fa1dd941a0474a"
+    }
+  ],
+  "files": [
+    {
+      "path": "agents/debugging-duck.md",
+      "sha256": "332eae712b26b5ad701f9715e7a9ab362e804e15a2a0c5d896cc7a99ad179b46"
+    },
+    {
+      "path": "agents/explore.md",
+      "sha256": "e9705155aea9695b1c9bbb8a62f3337953d0329e0a329b68c1fa1dd941a0474a"
+    },
+    {
+      "path": "agents/feasibility.md",
+      "sha256": "90a17cf4fec27eaa296662f0c65f4d25053f7df5c3d1b1c19fa4720f6cb60dcf"
+    },
+    {
+      "path": "agents/general.md",
+      "sha256": "d90724cb2002f96a1b329976d2640295d8403b5fdcb8fc99cfa89d8530abdc85"
+    },
+    {
+      "path": "agents/impl-check-behavior.md",
+      "sha256": "5f79b8cd4c94fda944766f283ccc29c19836f0880b95872b2e6610860dfcfca3"
+    },
+    {
+      "path": "agents/impl-check-contracts.md",
+      "sha256": "b99bc4f5a50a629663ec5709ca2beb9da91dc1d84593cd136a2074831eeecaa5"
+    },
+    {
+      "path": "agents/impl-check-design.md",
+      "sha256": "c77e135b95cda448b2d2202d8468473af36c0544b8eaee0db79ab3f283aa00ce"
+    },
+    {
+      "path": "agents/impl-check-runtime.md",
+      "sha256": "bcfbddcce7251196bf10efc9dd20657cd114d40e2701b5c455ce16f8433954ff"
+    },
+    {
+      "path": "agents/implementation-planner.md",
+      "sha256": "479d15a48f80c16ca19e5bd924bb846f36bad72b86f1adb879ec92f85b404d87"
+    },
+    {
+      "path": "agents/implementation-review.md",
+      "sha256": "eed87525d88edc7276c051fa14a4332eed26f1b8e13560be75711de6b106e219"
+    },
+    {
+      "path": "agents/implementer.md",
+      "sha256": "d028c5e4a05a8c96428ea5f1b0b3303a981d313cde62c086fa7b10ae91f38d70"
+    },
+    {
+      "path": "agents/references/feasibility.md",
+      "sha256": "2f5fda98192bc405a887e6f6d99a762fc2d4ad9dbd075a1d67959dd80ec2d7dd"
+    },
+    {
+      "path": "skills/agent-benchmark-preflight/SKILL.md",
+      "sha256": "3175b53ba9ddf84245ef10d866629b0d601338ba0278c29ed5f0df7c173033a7"
+    },
+    {
+      "path": "skills/design-ui/CODE-REVIEW.md",
+      "sha256": "eb421cea1d5bb90a2e7e16ea0fec6699d1bc61e50d628e462a6a49162e5dda99"
+    },
+    {
+      "path": "skills/design-ui/COMPONENTS.md",
+      "sha256": "cdfd1b006be2504c751cfe13255836d874a045ae43020dad5dd882c21d390b72"
+    },
+    {
+      "path": "skills/design-ui/EVALUATION.md",
+      "sha256": "2af866dabfa142709789340f62a424e1d2ade537e4ac7b76e74824c30a9cc0e6"
+    },
+    {
+      "path": "skills/design-ui/REACT-PERFORMANCE.md",
+      "sha256": "f4b00f257414516a04c8403053ffc6eff82392894e50e1f0fca7804a10bda6d3"
+    },
+    {
+      "path": "skills/design-ui/SKILL.md",
+      "sha256": "c3a72b7a7a5052ac130beb4ce08caf3c9915fce8915b0d5d0ca128fc482e2b40"
+    },
+    {
+      "path": "skills/designing-agents/SKILL.md",
+      "sha256": "44c52cda37a7609d4c9ccb45e56e60b272fc95434dbdcd17d7d7e9c4b4034213"
+    },
+    {
+      "path": "skills/designing-agents/agent-loop.md",
+      "sha256": "aa30cb672b3b50158eb8643dbdbf82ac9feba98b467d2f1ce2ec44899bac905c"
+    },
+    {
+      "path": "skills/designing-agents/blocks.md",
+      "sha256": "0c4ddeeb1685e90b022d4458901265ef749a5c0edcf87be8f442d3648f88cde5"
+    },
+    {
+      "path": "skills/designing-structured-output/SKILL.md",
+      "sha256": "b0e77ad840cca9e82308729a13443668933fbe1887541b85f921303c789843ad"
+    },
+    {
+      "path": "skills/diagnosing-agent-prompts/SKILL.md",
+      "sha256": "2220402d43e3eb381fe32621fc363b39985e0ca8f106ada6c698981d8cebe993"
+    },
+    {
+      "path": "skills/executing-qualitative-optimization/SKILL.md",
+      "sha256": "c3bf248ea0aa6e1be173cd02cdb51b04546ed884331e41d3bc2178404a69818b"
+    },
+    {
+      "path": "skills/gpt-prompting-knowhow/SKILL.md",
+      "sha256": "2de84a31cf0fbc471a114c0ad3ebf777a83ccc291eb58f233ff40ac271d73503"
+    },
+    {
+      "path": "skills/gpt-prompting-knowhow/reference.md",
+      "sha256": "c0189bb4e4ded68a1f3edef681a467afd3c99ac99bef7850f6af3081fceaff80"
+    },
+    {
+      "path": "skills/impl-check/SKILL.md",
+      "sha256": "8b35cb6ca831c0e0da8a6bae7f5a7a89e15a677e8c913553802b0767dd673096"
+    },
+    {
+      "path": "skills/impl-check/coverage.md",
+      "sha256": "faab5b58a395f8231ca326ea689170206759099863a9365b9d03306fc61a910f"
+    },
+    {
+      "path": "skills/impl-check/evals/README.md",
+      "sha256": "4a3df7e3d24fd7874cfd06d866c2fd117ff1e72a3e2e15437407e8bbb6f1ac83"
+    },
+    {
+      "path": "skills/impl-check/evals/expected.json",
+      "sha256": "01b4dd413348545039ccddf20010a7fd676bb0e1eb2442f426d68211e802a01e"
+    },
+    {
+      "path": "skills/impl-check/evals/inputs.json",
+      "sha256": "82893982c580dc7c9a55b0909add90e5b89c3df59f771064bd1ee4573aeb270e"
+    },
+    {
+      "path": "skills/impl-check/reviewers/behavior.md",
+      "sha256": "1bbe9645acb2f1954bc10a6419fb579409600032bfe7285078368a297cb096ab"
+    },
+    {
+      "path": "skills/impl-check/reviewers/common.md",
+      "sha256": "64607715ac2b37678c05feb8066f35c52cec4ae75be8c98778a578d39ec6bc1d"
+    },
+    {
+      "path": "skills/impl-check/reviewers/contracts.md",
+      "sha256": "9051c7a5e844200070dff3618939153ae2bd7627bcf8787a68981a5cdc6415a0"
+    },
+    {
+      "path": "skills/impl-check/reviewers/debugging-duck.md",
+      "sha256": "928cf10c16405f537cdc2384bfec21da3864a5e7c01c968433c845ba7a2b1f87"
+    },
+    {
+      "path": "skills/impl-check/reviewers/design.md",
+      "sha256": "5384b2d7a90f0438be60babf7b9a4e9260aff7d55462ddcce213f6c3d7a32789"
+    },
+    {
+      "path": "skills/impl-check/reviewers/implementation-review.md",
+      "sha256": "de1afa11499c1c5c329553dc257015cf617e0f278fd67c0ee8c2eb7c3443a24a"
+    },
+    {
+      "path": "skills/impl-check/reviewers/runtime.md",
+      "sha256": "1a0c5e3d6afce9b455ed97e0fc90f728c6451be717c511ef84a1dcff6e2a4cc3"
+    },
+    {
+      "path": "skills/plan/SKILL.md",
+      "sha256": "fe1379d5e3457694b111ac6fdfda2bc97a712a3708b8e525e239287933e24d45"
+    },
+    {
+      "path": "skills/planning-qualitative-optimization/SKILL.md",
+      "sha256": "5605e43510b144ebf8ac18ecde334a2e23388ff64b88d600926788eb3b5a7631"
+    },
+    {
+      "path": "skills/pr-preparation/SKILL.md",
+      "sha256": "bae3b1d3e7ce4274f066b8c58a2b8e00d78ae833107dcc4c2f98f97c510ec50b"
+    },
+    {
+      "path": "skills/reading-docx/SKILL.md",
+      "sha256": "4b08368622ba4a397f608e3e4d6a0a80beb73c4b261c0c26d4251d3ee77ab11a"
+    },
+    {
+      "path": "skills/renaming/SKILL.md",
+      "sha256": "129a13f1b5936361050224becfccb7fde9a49de70369a2e13c8a1e41827875df"
+    },
+    {
+      "path": "skills/review-final-diff/SKILL.md",
+      "sha256": "c96a3789274aee2b2c3b07b0e5afa304cf357f1dacbe17f1371a1ce56330d495"
+    },
+    {
+      "path": "skills/running-real-data-smoke-tests/SKILL.md",
+      "sha256": "5afb304d3f211eb31f8b357ebafa0557f2a731cb28ab686ff1546e0e0de3ec7c"
+    },
+    {
+      "path": "skills/triaging-pr-feedback/SKILL.md",
+      "sha256": "89c3a1f118398201edd1f79b3107aba0e1778878f8ccbde7efcfda28188f9b8c"
+    },
+    {
+      "path": "skills/writing-skills/SKILL.md",
+      "sha256": "4328de33e277efa7cb2a278d7b4a95f6a8c6e888a27749ecff017914f9712714"
+    }
+  ]
+}

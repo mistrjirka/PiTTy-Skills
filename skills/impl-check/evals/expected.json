@@ -1,0 +1,123 @@
+{
+  "001": {
+    "kind": "defect",
+    "checks": [
+      "B3"
+    ],
+    "expected": "Required failure becomes ordinary successful empty output; do not claim details of the external provider."
+  },
+  "002": {
+    "kind": "control",
+    "checks": [
+      "B2",
+      "B3"
+    ],
+    "expected": "An empty successful result is allowed, not a missing-output failure."
+  },
+  "003": {
+    "kind": "defect",
+    "checks": [
+      "C1",
+      "C4"
+    ],
+    "expected": "The asserted Message type does not establish the runtime shape."
+  },
+  "004": {
+    "kind": "control",
+    "checks": [
+      "C2",
+      "C5"
+    ],
+    "expected": "unknown at a validation boundary and schema-derived type are legitimate; parse is not automatically wrong with defined error translation."
+  },
+  "005": {
+    "kind": "control",
+    "checks": [
+      "C6"
+    ],
+    "expected": "Do not invent missing authentication merely because it is not repeated inside the handler. Unshown middleware implementation can be a gap, not a confirmed defect."
+  },
+  "006": {
+    "kind": "defect",
+    "checks": [
+      "D3"
+    ],
+    "expected": "Feature bypasses the supplied owning client and its required accounting; cite both files."
+  },
+  "007": {
+    "kind": "control",
+    "checks": [
+      "D6",
+      "R3"
+    ],
+    "expected": "Do not inline away a boundary that hides necessary transactional coordination."
+  },
+  "008": {
+    "kind": "defect",
+    "checks": [
+      "D4",
+      "B3"
+    ],
+    "expected": "Do not recommend blindly reusing the flawed helper. Explain the shared error-handling cause without scope-expanding edits."
+  },
+  "009": {
+    "kind": "defect",
+    "checks": [
+      "R4"
+    ],
+    "expected": "Durable RUNNING status alone does not establish a live worker after restart. Seek process/lease evidence before accepting this guard."
+  },
+  "010": {
+    "kind": "control",
+    "checks": [
+      "R5",
+      "R6"
+    ],
+    "expected": "Multiple intentional rollout stages are not automatically migrations to consolidate; no destructive down migration is required merely for symmetry."
+  },
+  "011": {
+    "kind": "defect",
+    "checks": [
+      "R2",
+      "B4"
+    ],
+    "expected": "UI-only cancellation does not stop work or reject late completion; deduplicate the shared root cause."
+  },
+  "012": {
+    "kind": "defect",
+    "checks": [
+      "B10",
+      "B12",
+      "R9"
+    ],
+    "expected": "A fresh process identity and cached output do not prove the changed model path executed."
+  },
+  "013": {
+    "kind": "control",
+    "checks": [
+      "D10"
+    ],
+    "expected": "Do not mechanically require a separate types file for a local single-use shape."
+  },
+  "014": {
+    "kind": "defect",
+    "checks": [
+      "B9"
+    ],
+    "expected": "The test asserts its own mocked return, not production behavior."
+  },
+  "015": {
+    "kind": "defect",
+    "checks": [
+      "R6"
+    ],
+    "expected": "The assumption and migration-history rewrite are unsafe without actual deployment evidence and explicit authorization."
+  },
+  "016": {
+    "kind": "defect",
+    "checks": [
+      "B4"
+    ],
+    "expected": "A Transition must not control text-input state. Verify against the installed React version; dependent expensive rendering can be deferred instead."
+  }
+}

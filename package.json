@@ -1,0 +1,41 @@
+{
+  "name": "@mistrjirka/pitty-skills",
+  "version": "0.1.0",
+  "description": "Reusable engineering skills and model-neutral Pi agent profiles",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mistrjirka/PiTTy-Skills.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pitty",
+    "skills",
+    "agents"
+  ],
+  "files": [
+    "skills",
+    "agents",
+    "manifest.json",
+    "README.md",
+    "LICENSE",
+    "ATTRIBUTION.md",
+    "CONTRIBUTING.md",
+    "scripts/update-manifest.mjs"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "scripts": {
+    "manifest": "node scripts/update-manifest.mjs",
+    "check": "node scripts/update-manifest.mjs --check",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
