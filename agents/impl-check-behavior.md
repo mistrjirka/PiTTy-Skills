@@ -73,6 +73,8 @@ Inspect every touched frontend for loading, empty, error, pending, cancellation,
 
 Check semantics, labels, keyboard operation, focus visibility/trapping/restoration, async announcements, long content, media failures, responsive layout and reduced motion. Follow the actual design system; do not require a particular library, tooltip on every icon, or new aesthetic direction.
 
+For changed responsive toolbars, forms and tables, review rendered evidence at the reported width or zoom and just before and after a relevant wrap or overflow transition, with the actual shell, controls and representative content present. Check for controls stranded on a row, clipped actions and competing page-level scroll containers. Distinguish intentional scrolling inside a table or dialog. Wide and narrow screenshots alone do not cover intermediate widths.
+
 ## B6 — Language and presentation
 
 Check user-facing text against its context, established localization, locale-sensitive numbers/dates, and changed translations across affected locales. Names and status messages must describe the actual action/result, not expose internal implementation jargon.

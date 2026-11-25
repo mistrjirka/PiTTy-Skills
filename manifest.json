@@ -43,7 +43,7 @@
       "path": "agents/impl-check-behavior.md",
       "allowedSubagents": [],
       "description": "Read-only impl-check-behavior; evidence and unresolved issues",
-      "sha256": "f55c411152d517c79f153813607e910baf8a2938e70fed763d95f048ce230728"
+      "sha256": "f6a64cbb06acfcafa9fab7f2bc6fd38203b5828f29aed66612cc85518bddee7b"
     },
     {
       "name": "impl-check-contracts",
@@ -146,7 +146,7 @@
     },
     {
       "path": "agents/impl-check-behavior.md",
-      "sha256": "f55c411152d517c79f153813607e910baf8a2938e70fed763d95f048ce230728"
+      "sha256": "f6a64cbb06acfcafa9fab7f2bc6fd38203b5828f29aed66612cc85518bddee7b"
     },
     {
       "path": "agents/impl-check-contracts.md",
@@ -202,7 +202,7 @@
     },
     {
       "path": "skills/impl-check/SKILL.md",
-      "sha256": "8b35cb6ca831c0e0da8a6bae7f5a7a89e15a677e8c913553802b0767dd673096"
+      "sha256": "9667bceac1ea9ca8b514b23034f9040b06511585783831afe6f8a1c473386e2b"
     },
     {
       "path": "skills/impl-check/coverage.md",

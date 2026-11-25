@@ -9,6 +9,8 @@ Keep four independent roles: impl-check-behavior (B1–B12), impl-check-contract
 
 Establish the actual target: user request, worktree, base/comparison semantics, staged/unstaged/deleted/relevant untracked changes, governing conventions and validation evidence. A branch's own tracking ref is not automatically its review base. Give all children the same snapshot ID, full relevant diff location, paths and assigned checks. Include useful graph source evidence for their assigned area, without replacing the diff or making all four reviewers repeat the same broad search. Do not exclude tests or required new files. The parent collects VCS evidence because reviewers cannot execute shell commands.
 
+When responsive layout is in scope, supply rendered evidence for B5 from the affected page with its real shell and representative content. Capture the reported size or zoom and the relevant wrap or overflow transition; if the runtime or browser is unavailable, state what could not be verified.
+
 ## Scheduling
 
 Use the currently configured Pi subagent scheduling, not assumptions about the standing prompt. When independent reviewers are available, run them concurrently against one stable snapshot. Launch the four exact reviewer profiles with `agent_spawn`. Models/thinking come from profile/settings, not spawn arguments. Keep the snapshot stable until all required reports arrive.
