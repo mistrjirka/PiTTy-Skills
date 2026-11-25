@@ -1,6 +1,6 @@
 {
   "name": "@mistrjirka/pitty-skills",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Reusable engineering skills and model-neutral Pi agent profiles",
   "type": "module",
   "license": "MIT",
