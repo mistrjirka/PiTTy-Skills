@@ -43,28 +43,28 @@
       "path": "agents/impl-check-behavior.md",
       "allowedSubagents": [],
       "description": "Read-only impl-check-behavior; evidence and unresolved issues",
-      "sha256": "2d07b2e50a38565849d34d50be26f4dd68bfc53e12d62bd1fc7da23496b9697b"
+      "sha256": "d31e4051cdadda9824535632b8c356736178bab87a7742b751d16191c3db80ca"
     },
     {
       "name": "impl-check-contracts",
       "path": "agents/impl-check-contracts.md",
       "allowedSubagents": [],
       "description": "Read-only impl-check-contracts; evidence and unresolved issues",
-      "sha256": "46631d52491b38b16dd526a967accc5ae0144a586b056e84085a333d66eb1c7b"
+      "sha256": "b3cbbdd618ddecb3254f883a66139bfe7be41b65f6bda483d5572ef28d0d8b3b"
     },
     {
       "name": "impl-check-design",
       "path": "agents/impl-check-design.md",
       "allowedSubagents": [],
       "description": "Read-only impl-check-design; evidence and unresolved issues",
-      "sha256": "7430ee4721663733bd0e6c26a0f39e9815ae9ecbe43952247a7ea5007e69f8f6"
+      "sha256": "00106800c87d3d4f08ed54bc98ec8c82d4cd355e08cc497b10d774a379a9c43d"
     },
     {
       "name": "impl-check-runtime",
       "path": "agents/impl-check-runtime.md",
       "allowedSubagents": [],
       "description": "Read-only impl-check-runtime; evidence and unresolved issues",
-      "sha256": "f64fc928c5f6f590c1a7658dd300db9f721bccecfd04316a4a00a04fc6895bfa"
+      "sha256": "7de38f68656bca867306466d0fa732966f4f080ab360eb5a9deee6acdc54c99d"
     },
     {
       "name": "debugging-duck",
@@ -74,21 +74,21 @@
         "feasibility"
       ],
       "description": "Read-only independent diagnosis with delegated evidence gathering",
-      "sha256": "dd6e174b0fb27e2fbc5333b51191cf6dc15aa14791b7db7fc5cffeb6fb3224b0"
+      "sha256": "44207ae42982dfe0ac52d9b7f718833cd6b961895f86ec20a8eefd7a36125b62"
     },
     {
       "name": "feasibility",
       "path": "agents/feasibility.md",
       "allowedSubagents": [],
       "description": "Deep read-only external/version research for material decisions needing synthesis",
-      "sha256": "cd8ec43d5e455ddc56eaf250dc7e54c6362bb5376baba65b7f37003cd6b5fb1a"
+      "sha256": "19b3f86d439f22392a6edcffaf8591908281e539f6171468292bc6b37ae47a36"
     },
     {
       "name": "implementation-review",
       "path": "agents/implementation-review.md",
       "allowedSubagents": [],
       "description": "Read-only implementation-review; evidence and unresolved issues",
-      "sha256": "32004dd3cc0a9b2076412f7548dd7bd3e274954c049d57bebee02e30a6e7e199"
+      "sha256": "8f1b86bc259174f4fa7d3c8f5cdc04ea3a1065bbcc38f4beb730d5f04313fb29"
     },
     {
       "name": "implementation-planner",
@@ -98,7 +98,7 @@
         "feasibility"
       ],
       "description": "Implementation planning with a saved execution plan and delegated repository exploration",
-      "sha256": "1f8100cad37725f9c434b43c355d14321bb98f294f4091305adfa8b3ba1a6f4c"
+      "sha256": "779d01b547d9c014ce73fc6477f673144d49c33c399b1e8e3fb11c661713610e"
     },
     {
       "name": "implementer",
@@ -107,7 +107,7 @@
         "explore"
       ],
       "description": "Scoped implementation with validation",
-      "sha256": "0df406c7280e777d347d29d417b4e39d9736ff2cb7052b667ca9903e500f9214"
+      "sha256": "4f3dd14aad6a3c3489671f8cb0c0b87533a502ab2286441462268e32fe0db7bd"
     },
     {
       "name": "general",
@@ -117,60 +117,60 @@
         "feasibility"
       ],
       "description": "Bounded engineering execution and experimentation",
-      "sha256": "ceb16b27ebb4cfb0563f0f58c4dcef486632bb4156d8aac071cdf8bf4d9b5663"
+      "sha256": "918196078dfb1f2cc9b2071df578e71264ea6060df8d43028a5dd7773e2c926f"
     },
     {
       "name": "explore",
       "path": "agents/explore.md",
       "allowedSubagents": [],
       "description": "Read-only repository/document evidence mapping for ownership, flow, callers, reuse and blast radius",
-      "sha256": "8197da6f3e8337ddbc6cf4c27819a58db45c8ac2da82979ecde3b878c68c9f41"
+      "sha256": "042f4205f7f89927f266746b0ea78d199b8f2f1461808a3bc3c30d264c2e97e2"
     }
   ],
   "files": [
     {
       "path": "agents/debugging-duck.md",
-      "sha256": "dd6e174b0fb27e2fbc5333b51191cf6dc15aa14791b7db7fc5cffeb6fb3224b0"
+      "sha256": "44207ae42982dfe0ac52d9b7f718833cd6b961895f86ec20a8eefd7a36125b62"
     },
     {
       "path": "agents/explore.md",
-      "sha256": "8197da6f3e8337ddbc6cf4c27819a58db45c8ac2da82979ecde3b878c68c9f41"
+      "sha256": "042f4205f7f89927f266746b0ea78d199b8f2f1461808a3bc3c30d264c2e97e2"
     },
     {
       "path": "agents/feasibility.md",
-      "sha256": "cd8ec43d5e455ddc56eaf250dc7e54c6362bb5376baba65b7f37003cd6b5fb1a"
+      "sha256": "19b3f86d439f22392a6edcffaf8591908281e539f6171468292bc6b37ae47a36"
     },
     {
       "path": "agents/general.md",
-      "sha256": "ceb16b27ebb4cfb0563f0f58c4dcef486632bb4156d8aac071cdf8bf4d9b5663"
+      "sha256": "918196078dfb1f2cc9b2071df578e71264ea6060df8d43028a5dd7773e2c926f"
     },
     {
       "path": "agents/impl-check-behavior.md",
-      "sha256": "2d07b2e50a38565849d34d50be26f4dd68bfc53e12d62bd1fc7da23496b9697b"
+      "sha256": "d31e4051cdadda9824535632b8c356736178bab87a7742b751d16191c3db80ca"
     },
     {
       "path": "agents/impl-check-contracts.md",
-      "sha256": "46631d52491b38b16dd526a967accc5ae0144a586b056e84085a333d66eb1c7b"
+      "sha256": "b3cbbdd618ddecb3254f883a66139bfe7be41b65f6bda483d5572ef28d0d8b3b"
     },
     {
       "path": "agents/impl-check-design.md",
-      "sha256": "7430ee4721663733bd0e6c26a0f39e9815ae9ecbe43952247a7ea5007e69f8f6"
+      "sha256": "00106800c87d3d4f08ed54bc98ec8c82d4cd355e08cc497b10d774a379a9c43d"
     },
     {
       "path": "agents/impl-check-runtime.md",
-      "sha256": "f64fc928c5f6f590c1a7658dd300db9f721bccecfd04316a4a00a04fc6895bfa"
+      "sha256": "7de38f68656bca867306466d0fa732966f4f080ab360eb5a9deee6acdc54c99d"
     },
     {
       "path": "agents/implementation-planner.md",
-      "sha256": "1f8100cad37725f9c434b43c355d14321bb98f294f4091305adfa8b3ba1a6f4c"
+      "sha256": "779d01b547d9c014ce73fc6477f673144d49c33c399b1e8e3fb11c661713610e"
     },
     {
       "path": "agents/implementation-review.md",
-      "sha256": "32004dd3cc0a9b2076412f7548dd7bd3e274954c049d57bebee02e30a6e7e199"
+      "sha256": "8f1b86bc259174f4fa7d3c8f5cdc04ea3a1065bbcc38f4beb730d5f04313fb29"
     },
     {
       "path": "agents/implementer.md",
-      "sha256": "0df406c7280e777d347d29d417b4e39d9736ff2cb7052b667ca9903e500f9214"
+      "sha256": "4f3dd14aad6a3c3489671f8cb0c0b87533a502ab2286441462268e32fe0db7bd"
     },
     {
       "path": "agents/references/feasibility.md",
